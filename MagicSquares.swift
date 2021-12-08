@@ -1,3 +1,4 @@
+// Global constants
 let three = 3
 let four = 4
 let five = 5
@@ -7,6 +8,7 @@ let eight = 8
 let nine = 9
 let magicNum = 15
 
+// Generates the magic squares
 func genSquare(square: [Int], currentSquare: [Int], index: Int) {
 
     let mutableIndex = index
@@ -30,6 +32,7 @@ func genSquare(square: [Int], currentSquare: [Int], index: Int) {
     }
 }
 
+// Checks if the magic square is a valid one
 func isMagic(preSquare: [Int]) -> Bool {
     let row1 = preSquare[0] + preSquare[1] + preSquare[2]
     let row2 = preSquare[three] + preSquare[four] + preSquare[five]
@@ -45,6 +48,7 @@ func isMagic(preSquare: [Int]) -> Bool {
         && diag1 == magicNum && diag2 == magicNum
 }
 
+// Outputs a formatted magic square
 func printMagicSquare(outputSquare: [Int]) {
     print("\n*****")
     for count in 0..<outputSquare.count {
@@ -59,6 +63,7 @@ func printMagicSquare(outputSquare: [Int]) {
     print("\n*****")
 }
 
+// Instantiates the arrays and calls genSquare()
 let magicSquare = [1, 2, three, four, five, six, seven, eight, nine]
 let extraArray = Array(repeating: 0, count: 9)
 
