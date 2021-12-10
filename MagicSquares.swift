@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 //
 //  MagicSquares.swift
 //
@@ -9,6 +10,9 @@
 //  This program prints out the Magic Squares.
 //
 
+=======
+// Global constants
+>>>>>>> 3542ba1afd249250ce74cdd84ae114eef3331806
 let three = 3
 let four = 4
 let five = 5
